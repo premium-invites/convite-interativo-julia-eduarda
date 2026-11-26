@@ -8,13 +8,13 @@
 - Cinco botões: confirmação, localização, manual, dress code, sugestões de presentes
 - Contagem regressiva integrada à moldura da página principal
 - Info acessível no manual e pop-up 9:16
-- RSVP em duas etapas e mensagem preparada para WhatsApp
+- Confirmação de presença com aviso da assessoria, sem formulário ou encaminhamento ao WhatsApp
 
 ## IMPORTANTE — DADOS PENDENTES PARA PUBLICAÇÃO COMPLETA
-1. `whatsappConfirmacao` em `config.js` está **vazio**. NÃO foi reutilizado o número da Isadora, Ágatha ou outro cliente. Sem ele a confirmação coleta dados mas NÃO envia ao WhatsApp.
-2. `linkLocalizacao` em `config.js` está **vazio**. Sem a URL do evento o botão avisa que é preciso configurá-la.
+1. A confirmação de presença exibe a mensagem: **“A assessoria entrará em contato para realizar a confirmação de presença.”** Não solicita dados e não abre WhatsApp.
+2. `linkLocalizacao` em `config.js` contém uma URL do espaço Monumentalle; confirme se é o local correto antes de compartilhar.
 3. `whatsappCriador` vem como referência do ZIP Isadora: confirmar antes de divulgação.
-4. Capa JPEG de WhatsApp criada a partir da arte principal, não fornecida pelo usuário; revisar se quer outra composição.
+4. Confira a capa JPEG de prévia para o WhatsApp e substitua caso queira usar outra composição.
 
 ## Publicação
 Repositório recomendado: `convite-interativo-julia-eduarda`
@@ -29,7 +29,7 @@ Abra `?editor=1` no endereço publicado; escolha cada área e altere percentuais
 - Imagens/MP3/MP4 acessíveis com caminho `assets/...` (cuidado com maiúsculas/minúsculas)
 - Vídeo em H.264, abertura e transição automática
 - A música começa após toque e mantém continuidade
-- Confirmar presença: preencher, validar e abrir WhatsApp com nome e acompanhantes
+- Confirmar presença: abrir aviso da assessoria e fechar em “Entendi”, pelo fundo ou pela tecla Esc
 - Localização: link exato
 - Voltar em páginas, popup Info com botão X e contato
 - Contagem regressiva na moldura da arte principal
