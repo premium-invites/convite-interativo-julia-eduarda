@@ -1,87 +1,37 @@
-# Convite de Gabrielle · XV anos
+# Convite Interativo — Julia Eduarda | Premium Invites
 
-Repositório: `convite-interativo-gabrielle`. Extraia o ZIP e coloque seu conteúdo na raiz.
+## Dados confirmados
+- Julia Eduarda (SEM acento), XV anos
+- 03/07/2027, 19h30 — horário de Brasília
+- Abertura: carta + vídeo `assets/video.mp4` (arquivo enviado neste chat, convertido para H.264)
+- Música: mantida do ZIP de Isadora, `assets/musica.mp3` (pode ser substituída por outro MP3 com mesmo nome)
+- Cinco botões: confirmação, localização, manual, dress code, sugestões de presentes
+- Contagem regressiva integrada à moldura da página principal
+- Info acessível no manual e pop-up 9:16
+- Confirmação de presença com aviso da assessoria, sem formulário ou encaminhamento ao WhatsApp
 
-Edite os contatos em `config.js`: `whatsapp.numero` para a confirmação, `whatsappStudio` para o pop-up, `mapa` para a localização e `pix` para a chave de presentes.
+## IMPORTANTE — DADOS PENDENTES PARA PUBLICAÇÃO COMPLETA
+1. A confirmação de presença exibe a mensagem: **“A assessoria entrará em contato para realizar a confirmação de presença.”** Não solicita dados e não abre WhatsApp.
+2. `linkLocalizacao` em `config.js` contém uma URL do espaço Monumentalle; confirme se é o local correto antes de compartilhar.
+3. `whatsappCriador` vem como referência do ZIP Isadora: confirmar antes de divulgação.
+4. Confira a capa JPEG de prévia para o WhatsApp e substitua caso queira usar outra composição.
 
-O botão **i** fica no centro inferior da página principal. Abra `?editor=1`, selecione **Informações (página principal)** e arraste para ajustar. Copie as posições para `hotspots` em `config.js`.
-
-Para alterar textos desenhados, substitua a arte correspondente em `assets/`. Ao trocar o endereço do site, atualize os links do preview no início de `index.html`.
-
-# Engine V4 Modular — Convite Premium
-
-Esta versão mantém a correção de áudio para iPhone/Safari e permite ativar ou desativar cada recurso pelo `config.js`.
-
-## Recursos modulares
-
-```js
-telas: {
-  video: true,
-  whatsapp: true,
-  localizacao: true,
-  presentes: true,
-  dresscode: true,
-  contagem: true
-}
-```
-
-Use `false` para remover um recurso. A Engine remove automaticamente:
-
-- a área clicável invisível;
-- a tela relacionada;
-- a opção correspondente do editor;
-- qualquer posição antiga salva no navegador para aquele recurso.
-
-Exemplo de convite somente com localização e contagem:
-
-```js
-telas: {
-  video: true,
-  whatsapp: false,
-  localizacao: true,
-  presentes: false,
-  dresscode: false,
-  contagem: true
-}
-```
-
-## Arquivos de arte
-
-- `assets/opening.webp`
-- `assets/principal.webp`
-- `assets/presentes.webp`, quando Presentes estiver ativo
-- `assets/dresscode.webp`, quando Dress Code estiver ativo
-- `assets/contagem.webp`, quando Contagem estiver ativa
-- `assets/video.mp4`, quando Vídeo estiver ativo
-- `assets/musica.mp3`
-- `assets/preview-whatsapp.jpeg`
+## Publicação
+Repositório recomendado: `convite-interativo-julia-eduarda`
+URL prevista: `https://premium-invites.github.io/convite-interativo-julia-eduarda/`
+Envie **index.html**, **config.js** e a pasta **assets/** para a RAIZ do repositório (não deixe subpasta externa do ZIP). Configure GitHub Pages em main / root.
+Se mudar o nome do repositório ou usuário, altere as URLs absolutas dos metadados OG em `index.html`.
 
 ## Editor
+Abra `?editor=1` no endereço publicado; escolha cada área e altere percentuais. As mudanças locais valem somente para seu navegador. Clique em Exportar e substitua o objeto `hotspots` no `config.js` para publicar as posições para todos. O editor usa campos numéricos em porcentagem, sem drag-and-drop.
 
-Abra o convite com `?editor=1` no final do endereço. O editor mostra somente os recursos ligados no `config.js`.
-
-Na tela de contagem existem duas áreas editáveis:
-
-- `Contagem (botão)`: hotspot da tela principal;
-- `Contador (na tela)`: posição e tamanho do contador sobre `contagem.webp`.
-
-## Música no iPhone
-
-A V4 preserva o desbloqueio de áudio da V3. Caso o Safari bloqueie o MP3, aparece o botão **Ativar música** sem reiniciar o convite.
-
-## Botões de voltar móveis
-No editor `?editor=1`, selecione **Voltar — Presentes**, **Voltar — Dress Code** ou **Voltar — Contagem** para mover e redimensionar cada área.
-A opção **Mostrar texto “Voltar”** pode ser desmarcada. O texto e o visual do botão somem, mas a área continua clicável sobre a arte.
-
-
-## Manual do Convidado
-
-Para usar esta tela, coloque sua arte em `assets/manual.webp` e deixe `manual: true` dentro de `telas` no `config.js`. A área do botão e o botão Voltar podem ser ajustados em `?editor=1`.
-
-## Ajustes da contagem regressiva
-
-- O botão da contagem usa o hotspot `countdown`.
-- A Engine também aceita `contagem` por compatibilidade.
-- A cor dos números é alterada em `contagem.corNumero` no `config.js`.
-- A cor das legendas é alterada em `contagem.corLegenda`.
-- O contador redimensiona números, legendas e espaçamentos proporcionalmente ao bloco, evitando sobreposição.
+## Testes necessários depois da publicação
+- Imagens/MP3/MP4 acessíveis com caminho `assets/...` (cuidado com maiúsculas/minúsculas)
+- Vídeo em H.264, abertura e transição automática
+- A música começa após toque e mantém continuidade
+- Confirmar presença: abrir aviso da assessoria e fechar em “Entendi”, pelo fundo ou pela tecla Esc
+- Localização: link exato
+- Voltar em páginas, popup Info com botão X e contato
+- Contagem regressiva na moldura da arte principal
+- Compartilhar WhatsApp: prévia OG e JPEG 1200x630 (cache pode demorar)
+- Testar em celular real Android + iPhone. O código foi construído e verificado estaticamente; ainda exige testes reais no GitHub Pages.

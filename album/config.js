@@ -3,10 +3,10 @@ window.ALBUM_CONFIG={
  supabaseKey:"sb_publishable_jahCYyiTSKOCXw9vhEwfkA_oizjGWw5",
  bucket:"fotos-eventos",
  bucketOriginais:"originais-eventos",
- eventoId:"gabrielle-xv-2027",
+ eventoId:"julia-eduarda",
  evento:{
-   titulo:"15 anos de Gabrielle",
-   subtitulo:"Cada foto, uma lembrança especial desta noite inesquecível."
+   titulo:"XV de Julia Eduarda",
+   subtitulo:"Julia Eduarda • XV"
  },
  moldura:"assets/moldura.png",
  qualidadeWebp:.82,
