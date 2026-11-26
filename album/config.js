@@ -6,7 +6,7 @@ window.ALBUM_CONFIG={
  eventoId:"julia-eduarda",
  evento:{
    titulo:"XV de Julia Eduarda",
-   subtitulo:"Julia Eduarda • XV • 03/07/2027 às 19h30 — Compartilhe seus momentos!"
+   subtitulo:"Julia Eduarda • XV"
  },
  moldura:"assets/moldura.png",
  qualidadeWebp:.82,
