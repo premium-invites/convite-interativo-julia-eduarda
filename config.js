@@ -2,10 +2,10 @@
 window.CONFIG = {
   nome: "Julia Eduarda", dataEvento: "2027-07-03T19:30:00-03:00",
   whatsappConfirmacao: "", // PENDENTE: DDI+DDD+numero, ex.: 5511999999999
-  linkLocalizacao: "", // PENDENTE: URL https://maps.google.com/... ou maps.app.goo.gl/...
+  linkLocalizacao: "https://www.google.com/maps/place/Monumentalle/@-23.0843136,-52.4110673,16.51z/data=!4m6!3m5!1s0x94929570f9b87a3d:0xe92b0570edc0b006!8m2!3d-23.0830008!4d-52.4078434!16s%2Fg%2F11trsr8_2b?entry=ttu&g_ep=EgoyMDI2MTEyMy4wIKXMDSoASAFQAw%3D%3D", // PENDENTE: URL https://maps.google.com/... ou maps.app.goo.gl/...
   whatsappCriador: "5588988692212", // CONTATO do exemplo anterior: confirmar antes de divulgar
   repositorio: "convite-interativo-julia-eduarda", usuarioGitHub: "premium-invites",
-  musicaVolume: 0.40,
+  musicaVolume: 0.50,
   confirmacao: { permitirAcompanhantes: true, maxAcompanhantes: 10 },
   hotspots: {
     confirmar: {left:13.4,top:46.7,width:21.5,height:11.4},
